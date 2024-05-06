@@ -30,7 +30,7 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--path", type=str, help="Path to a file")
+    parser.add_argument("path", type=str, help="Path to a file")
     parser.add_argument("--word_tokenize", action="store_true",
                         help="Whether to tokenize")
     args = parser.parse_args()
