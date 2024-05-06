@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from typing import Iterable, Generator, Union
+from typing import Iterable, Generator, List, Union
 
 
 def say_hello(name: str) -> str:
@@ -31,3 +31,8 @@ def multiply_iterable(
     """Multiply every element in an iterable by a number."""
     for num in array:
         yield num * by
+
+
+# Type checking assertions
+assert float | int == Union[float, int], "Types don't match!"
+# assert list == List, "Types don't match!"
